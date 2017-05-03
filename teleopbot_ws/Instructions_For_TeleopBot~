@@ -1,0 +1,50 @@
+Open New Terminal T1
+	$ roscore
+	
+	//" Minimize"
+
+
+Open New Terminal T2
+	$ cd teleopbot_ws
+	$ ./key_publisher.py 
+
+	//"Right Click on the top of this terminal and click Always on top  "
+	//"This terminal is important and we will be comming back to this "
+
+
+
+Open New Terminal T3
+	$ cd teleopbot_ws
+	$ ./keys_to_twist_with_ramps.py cmd_vel:=cmd_vel_mux/input/teleop
+	
+	//" Minimize"
+
+
+
+
+Open New Terminal T4
+	$ roslaunch turtlebot_gazebo turtlebot_world.launch
+	
+	//" Minimize"
+
+
+
+
+Terminal 2
+
+	//" Using w,x the robot will move forward and back"
+	//" Using a,d the robot will rotate"
+	//" Using s the robot will stop"
+	
+
+Open New Terminal T5
+	$ rosrun rviz rviz
+
+	//" Minimize"
+	//" In rviz , at Fixed Frame, right click map,select odom from drop down menu "
+	//" Click add in bottom left corner, select RobotModel from menu"
+	//" Click add in bottom left corner, select PointCloud2 from menu"
+	//" Click on PointCloud2 dropdown menu on left hand side, Right click on right hand side of Topic select first option in dropdown menu  "
+	//" Click add in bottom left corner, select Image from menu"
+	//" Click on Image dropdown menu on left hand side, Right click on right hand side of Topic select second option in dropdown menu  "
+

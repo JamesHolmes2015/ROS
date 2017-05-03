@@ -1,0 +1,2 @@
+lab_3
+-DCATKIN_DEVEL_PREFIX=/home/u170457/HelloWorld_ws/devel -DCMAKE_INSTALL_PREFIX=/home/u170457/HelloWorld_ws/install -G Unix Makefiles

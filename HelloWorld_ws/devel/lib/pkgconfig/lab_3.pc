@@ -1,0 +1,8 @@
+prefix=/home/u170457/HelloWorld_ws/devel
+
+Name: lab_3
+Description: Description of lab_3
+Version: 0.0.0
+Cflags: -I/home/u170457/HelloWorld_ws/devel/include
+Libs: -L/home/u170457/HelloWorld_ws/devel/lib 
+Requires: message_runtime

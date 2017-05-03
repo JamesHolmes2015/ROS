@@ -1,0 +1,259 @@
+digraph graphname {
+	graph [bb="0,0,1510,376",
+		compound=True,
+		rank=same,
+		rankdir=LR,
+		ranksep=0.2
+	];
+	node [label="\N"];
+	subgraph cluster_cmd_vel_mux {
+		graph [bb="870,216,1016,324",
+			compound=True,
+			label=cmd_vel_mux,
+			lheight=0.21,
+			lp="943,312.5",
+			lwidth=1.10,
+			rank=same,
+			rankdir=LR,
+			ranksep=0.2,
+			style=bold
+		];
+		n__cmd_vel_mux		 [URL=_cmd_vel_mux,
+			height=0.5,
+			label="/cmd_vel_mux",
+			pos="943,242",
+			shape=ellipse,
+			tooltip="/cmd_vel_mux",
+			width=1.7873];
+		n__cmd_vel_mux -> n__cmd_vel_mux		 [URL=topic_3A_mobile_base_nodelet_manager_bond,
+			label="/mobile_base_nodelet_manager/bond",
+			lp="943,285.5",
+			penwidth=1,
+			pos="e,972.97,258.29 913.03,258.29 905.8,268.39 915.79,278 943,278 960.43,278 970.8,274.06 974.1,268.57"];
+	}
+	subgraph cluster_robot_state_publisher {
+		graph [bb="454,8,648,83",
+			compound=True,
+			label=robot_state_publisher,
+			lheight=0.21,
+			lp="551,71.5",
+			lwidth=1.64,
+			rank=same,
+			rankdir=LR,
+			ranksep=0.2,
+			style=bold
+		];
+		n__robot_state_publisher		 [URL=_robot_state_publisher,
+			height=0.5,
+			label="/robot_state_publisher",
+			pos="551,34",
+			shape=ellipse,
+			tooltip="/robot_state_publisher",
+			width=2.4734];
+	}
+	subgraph cluster_bumper2pointcloud {
+		graph [bb="1279,260,1461,368",
+			compound=True,
+			label=bumper2pointcloud,
+			lheight=0.21,
+			lp="1370,356.5",
+			lwidth=1.49,
+			rank=same,
+			rankdir=LR,
+			ranksep=0.2,
+			style=bold
+		];
+		n__bumper2pointcloud		 [URL=_bumper2pointcloud,
+			height=0.5,
+			label="/bumper2pointcloud",
+			pos="1370,286",
+			shape=ellipse,
+			tooltip="/bumper2pointcloud",
+			width=2.2929];
+		n__bumper2pointcloud -> n__bumper2pointcloud		 [URL=topic_3A_mobile_base_nodelet_manager_bond,
+			label="/mobile_base_nodelet_manager/bond",
+			lp="1370,329.5",
+			penwidth=1,
+			pos="e,1411.8,301.92 1328.2,301.92 1317.3,312.15 1331.2,322 1370,322 1395.4,322 1410.2,317.76 1414.2,311.95"];
+	}
+	subgraph cluster_wander {
+		graph [bb="896,127,990,202",
+			compound=True,
+			label=wander,
+			lheight=0.21,
+			lp="943,190.5",
+			lwidth=0.56,
+			rank=same,
+			rankdir=LR,
+			ranksep=0.2,
+			style=bold
+		];
+		n__wander		 [URL=_wander,
+			height=0.5,
+			label="/wander",
+			pos="943,153",
+			shape=ellipse,
+			tooltip="/wander",
+			width=1.0832];
+	}
+	subgraph cluster_depthimage_to_laserscan {
+		graph [bb="8,171,230,279",
+			compound=True,
+			label=depthimage_to_laserscan,
+			lheight=0.21,
+			lp="119,267.5",
+			lwidth=1.92,
+			rank=same,
+			rankdir=LR,
+			ranksep=0.2,
+			style=bold
+		];
+		n__depthimage_to_laserscan		 [URL=_depthimage_to_laserscan,
+			height=0.5,
+			label="/depthimage_to_laserscan",
+			pos="119,197",
+			shape=ellipse,
+			tooltip="/depthimage_to_laserscan",
+			width=2.8525];
+		n__depthimage_to_laserscan -> n__depthimage_to_laserscan		 [URL=topic_3A_laserscan_nodelet_manager_bond,
+			label="/laserscan_nodelet_manager/bond",
+			lp="119,240.5",
+			penwidth=1,
+			pos="e,156.57,214.04 81.434,214.04 73.767,223.86 86.289,233 119,233 139.44,233 152,229.43 156.67,224.35"];
+	}
+	subgraph cluster_mobile_base_nodelet_manager {
+		graph [bb="1238,126,1502,234",
+			compound=True,
+			label=mobile_base_nodelet_manager,
+			lheight=0.21,
+			lp="1370,222.5",
+			lwidth=2.36,
+			rank=same,
+			rankdir=LR,
+			ranksep=0.2,
+			style=bold
+		];
+		n__mobile_base_nodelet_manager		 [URL=_mobile_base_nodelet_manager,
+			height=0.5,
+			label="/mobile_base_nodelet_manager",
+			pos="1370,152",
+			shape=ellipse,
+			tooltip="/mobile_base_nodelet_manager",
+			width=3.4303];
+		n__mobile_base_nodelet_manager -> n__mobile_base_nodelet_manager		 [URL=topic_3A_mobile_base_nodelet_manager_bond,
+			label="/mobile_base_nodelet_manager/bond",
+			lp="1370,195.5",
+			penwidth=1,
+			pos="e,1412.9,169.04 1327.1,169.04 1318.4,178.86 1332.7,188 1370,188 1393.3,188 1407.7,184.43 1413,179.35"];
+	}
+	subgraph cluster_laserscan_nodelet_manager {
+		graph [bb="432,134,670,242",
+			compound=True,
+			label=laserscan_nodelet_manager,
+			lheight=0.21,
+			lp="551,230.5",
+			lwidth=2.10,
+			rank=same,
+			rankdir=LR,
+			ranksep=0.2,
+			style=bold
+		];
+		n__laserscan_nodelet_manager		 [URL=_laserscan_nodelet_manager,
+			height=0.5,
+			label="/laserscan_nodelet_manager",
+			pos="551,160",
+			shape=ellipse,
+			tooltip="/laserscan_nodelet_manager",
+			width=3.0692];
+		n__laserscan_nodelet_manager -> n__laserscan_nodelet_manager		 [URL=topic_3A_laserscan_nodelet_manager_bond,
+			label="/laserscan_nodelet_manager/bond",
+			lp="551,203.5",
+			penwidth=1,
+			pos="e,589.63,177.04 512.37,177.04 504.49,186.86 517.36,196 551,196 572.02,196 584.94,192.43 589.74,187.35"];
+	}
+	subgraph cluster_gazebo {
+		graph [bb="72,75,166,150",
+			compound=True,
+			label=gazebo,
+			lheight=0.21,
+			lp="119,138.5",
+			lwidth=0.54,
+			rank=same,
+			rankdir=LR,
+			ranksep=0.2,
+			style=bold
+		];
+		n__gazebo		 [URL=_gazebo,
+			height=0.5,
+			label="/gazebo",
+			pos="119,101",
+			shape=ellipse,
+			tooltip="/gazebo",
+			width=1.0652];
+	}
+	n__cmd_vel_mux -> n__bumper2pointcloud	 [URL=topic_3A_mobile_base_nodelet_manager_bond,
+		label="/mobile_base_nodelet_manager/bond",
+		lp="1127,298.5",
+		penwidth=1,
+		pos="e,1289.7,290.4 976.72,257.51 990.93,263.5 1008,269.69 1024,273 1109.5,290.65 1209.3,292.43 1279.5,290.68"];
+	n__cmd_vel_mux -> n__mobile_base_nodelet_manager	 [URL=topic_3A_mobile_base_nodelet_manager_bond,
+		label="/mobile_base_nodelet_manager/bond",
+		lp="1127,232.5",
+		penwidth=1,
+		pos="e,1324.2,168.76 993.82,230.82 1003.8,228.75 1014.2,226.7 1024,225 1115,209.16 1139.9,217.53 1230,197 1258.4,190.53 1289.3,180.81 1314.7,172.06"];
+	n__bumper2pointcloud -> n__cmd_vel_mux	 [URL=topic_3A_mobile_base_nodelet_manager_bond,
+		label="/mobile_base_nodelet_manager/bond",
+		lp="1127,265.5",
+		penwidth=1,
+		pos="e,1007.3,242.95 1313.2,272.86 1287.9,267.4 1257.6,261.53 1230,258 1158.1,248.8 1075.4,244.89 1017.4,243.23"];
+	n__bumper2pointcloud -> n__mobile_base_nodelet_manager	 [URL=topic_3A_mobile_base_nodelet_manager_bond,
+		label="/mobile_base_nodelet_manager/bond",
+		lp="1359.5,219",
+		penwidth=1,
+		pos="e,1370,170.07 1370,267.79 1370,245.24 1370,206.6 1370,180.21"];
+	n__wander -> n__mobile_base_nodelet_manager	 [URL=topic_3A_cmd_vel_mux_input_teleop,
+		label="/cmd_vel_mux/input/teleop",
+		lp="1127,151.5",
+		penwidth=1,
+		pos="e,1256.3,144.89 980.57,148.01 994.17,146.39 1009.8,144.8 1024,144 1097.7,139.87 1180.3,141.56 1246.3,144.44"];
+	n__depthimage_to_laserscan -> n__laserscan_nodelet_manager	 [URL=topic_3A_laserscan_nodelet_manager_bond,
+		label="/laserscan_nodelet_manager/bond",
+		lp="331,206.5",
+		penwidth=1,
+		pos="e,492.06,175.28 221.35,198.78 280.64,198.63 356.8,196.38 424,188 443.04,185.62 463.43,181.71 482.15,177.54"];
+	n__mobile_base_nodelet_manager -> n__cmd_vel_mux	 [URL=topic_3A_mobile_base_nodelet_manager_bond,
+		label="/mobile_base_nodelet_manager/bond",
+		lp="1127,185.5",
+		penwidth=1,
+		pos="e,985.43,228.43 1256.2,158.99 1157.3,165.34 1028.6,174.28 1024,178 1014,186.18 1024.3,196.04 1016,206 1010.1,213.11 1002.4,218.95 994.34,223.69"];
+	n__mobile_base_nodelet_manager -> n__bumper2pointcloud	 [URL=topic_3A_mobile_base_nodelet_manager_bond,
+		label="/mobile_base_nodelet_manager/bond",
+		lp="1359.5,219",
+		penwidth=1,
+		pos="e,1370,267.79 1370,170.07 1370,192.55 1370,231.18 1370,257.63"];
+	n__mobile_base_nodelet_manager -> n__gazebo	 [URL=topic_3A_mobile_base_commands_velocity,
+		label="/mobile_base/commands/velocity",
+		lp="770,124.5",
+		penwidth=1,
+		pos="e,157.58,101.31 1269.2,141.58 1256,140.31 1242.7,139.08 1230,138 1135,129.89 1111.2,127.5 1016,123 692.15,107.68 301.93,102.73 167.9,101.41"];
+	n__laserscan_nodelet_manager -> n__wander	 [URL=topic_3A_scan,
+		label="/scan",
+		lp="770,165.5",
+		penwidth=1,
+		pos="e,903.84,153.68 660.9,158.05 737.27,156.67 835.7,154.91 893.53,153.87"];
+	n__laserscan_nodelet_manager -> n__depthimage_to_laserscan	 [URL=topic_3A_laserscan_nodelet_manager_bond,
+		label="/laserscan_nodelet_manager/bond",
+		lp="331,180.5",
+		penwidth=1,
+		pos="e,181.25,182.62 440.28,160.32 380.32,161.56 304.87,164.86 238,173 222.76,174.85 206.56,177.62 191.2,180.62"];
+	n__gazebo -> n__robot_state_publisher	 [URL=topic_3A_joint_states,
+		label="/joint_states",
+		lp="331,79.5",
+		penwidth=1,
+		pos="e,469.12,41.168 152.33,91.945 175.92,85.611 208.74,77.357 238,72 311.85,58.478 396.44,48.514 458.9,42.19"];
+	n__gazebo -> n__laserscan_nodelet_manager	 [URL=topic_3A_camera_depth_camera_info,
+		label="/camera/depth/camera_info",
+		lp="331,149.5",
+		penwidth=1,
+		pos="e,467.66,148.14 156.05,105.77 212.98,113.32 327.2,128.56 424,142 434.92,143.52 446.37,145.12 457.72,146.73"];
+}
