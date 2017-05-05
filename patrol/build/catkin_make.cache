@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/u170457/patrol/devel -DCMAKE_INSTALL_PREFIX=/home/u170457/patrol/install -G Unix Makefiles
